@@ -1,0 +1,93 @@
+** start of undefined **
+
+<!DOCTYPE html>  
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+<h1 id="title">Customer Satisfaction Survey</h1>
+<p id="description">Please fill out this form so we can improve your experience in the future</p>
+<form id="survey-form" >
+<fieldset> 
+<label for="name" id="name-label">Enter your name: <input id="name" type="text" name="name" placeholder="Your name here" required </input></label>
+  <label for="email" id="email-label">Enter your email: <input id="email" type="email" name="email" placeholder="Your email here" required </input></label>
+  <label for="phone">Enter your phone number: <input id="phone" type="tel" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" name="phone" placeholder="Your phone number here" </input></label>
+  <label for="number" id="number-label">Enter your age: <input id="number" type="number" min="18" max="100" name="age" placeholder="Your age here" </input></label> 
+  </fieldset>
+  <fieldset>
+  <label for="rate" id="rate-label">How would you rate our services?
+    <select id="dropdown" name="dropdown">
+      <option value="">(select one)</option>
+      <option value="1">Excellent</option>
+      <option value="2">Good</option>
+      <option value="3">Average</option>
+      <option value="4">Poor</option>
+      <option value="5">Very poor</option>
+      </select>
+      </fieldset>
+      <fieldset>
+      <p>Would you recommend our company to a friend or colleague?
+      <label for="yes" id="yes-label"><input id="yes-label" type="radio" name="recommendation" class="inline" value="Yes"</input>Yes</label>
+      <label for="no" id="no-label"><input id="no-label" type="radio" name="recommendation" class="inline" value="No"</input>No</label></p>
+  <label for="news"><input id="news" type="checkbox" name="news" class="inline" value="news"</input>I would like to receive news and updates via email</label>
+  <label for="sms"><input id="sms" type="checkbox" name="sms" class="inline" value="news" </input>I would like to receive news and updates via text</label>
+  </fieldset>
+  <fieldset>
+  <label for="comments">Comments or suggestions:
+          <textarea id="comments" name="comments" rows="3" cols="30"></textarea></label>
+</fieldset>
+<input type="submit" id="submit" value="Submit" />
+         </form>
+      </body>
+  </html>
+
+** end of undefined **
+
+** start of undefined **
+
+body {width:100%;
+height:100vh;
+margin:0; 
+background-color: rgba(30,0,90);
+color: rgba(235,235,235);
+font-family: Candara;
+font-size: 17px
+ }
+h1, p {
+  margin: 1em auto;
+  text-align: center;
+}
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+input, textarea {
+  background-color: rgba(30,0,90) ;
+  border: 1px solid rgba(235,235,235);
+  color: rgba(235,235,235)
+}
+form {
+  width: 80vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: rgba(50,0,200);
+  border-color: white;
+  min-width: 300px;
+}
+
+
+
+** end of undefined **
+
